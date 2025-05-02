@@ -14,15 +14,44 @@ This project automates the following tasks using **Java, Selenium, and Cucumber*
 - **Form Filling & Error Capturing**
 - **Extracting Menu Items & Storing Data in Collections**
 - **Navigation & Dynamic Web Element Handling**
-- **Test Runner for Execution** using JUnit/TestNG
+- **Test Runner for Execution** using JUnit
 
 ## Tech Stack
 - **Programming Language:** Java
 - **Automation Tools:** Selenium WebDriver, Cucumber (BDD)
-- **Test Runner:** JUnit/TestNG
-- **Build Tool:** Maven/Gradle
+- **Test Runner:** JUnit
+- **Build Tool:** Maven
 
 ## How to Run
-1. Clone the repository:
+1. Navigate to the project directory:
    ```bash
-   git clone https://github.com/rehana333/ZigWheels-Selenium-Automation.git
+   cd ZigWheels-Selenium-Automation
+   ```
+2. Install dependencies via Maven:
+   ```bash
+   mvn clean install
+   ```
+3. Run the **TestRunner** to execute Cucumber tests:
+   ```bash
+   mvn test
+   ```
+4. View test results in the console or generated reports.
+
+## Project Structure
+```
+├── src
+│   ├── main
+│   │   ├── java (Framework & Helpers)
+│   ├── test
+│   │   ├── java (Step Definitions & Test Runner)
+│   │   ├── resources (Feature Files)
+│── pom.xml (Maven dependencies)
+│── README.md (Project details)
+```
+
+## Test Execution
+The **TestRunner** file is responsible for executing the Cucumber scenarios. It integrates with JUnit and ensures smooth test execution.
+
+## Contributors
+Created by **Rehana Sayyed** – Feel free to contribute!
+
